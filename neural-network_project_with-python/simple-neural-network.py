@@ -79,7 +79,7 @@ class neuralNetwork:
 
                 pd_errors_wrt_hidden_neurons_total_net_input[h] = d_error_wrt_hidden_neuron_output * self.hidden_layer.neurons[h].calculate_pd_total_net_input_wrt_input()
 
-                # update output neuron weights
+                # update output neuron weights this is
 
             for o in range (len(self.output_layer.neurons)):
                 for w_ho in range (len(self.output_layer.neurons[0].weights)):
