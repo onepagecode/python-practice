@@ -72,8 +72,8 @@ class neuralNetwork:
 
             for h in range (len(self.hidden_layer.neurons)):
 
-                # we need to calculate the derivatives of the error with respect to the output of each hidden layer neurons
-            d_error_wrt_hidden_neuron_output = 0
+
+            d_error_wrt_hidden_neuron_output:
             for o in range(len(self.output_layer.neurons)):
                 d_error_wrt_hidden_neuron_output += pd_errors_wrt_output_neuron_total_net_input[0] * self.output_layer.neurons[0].weights[h]
 
@@ -136,7 +136,7 @@ class NeuronLayer:
             otuputs.append(neuron.output)
         return outputs
 
-    class Neuron
+    class Neuron:
         def __init__(self, bias):
             self.bias = bias
             self.weights = []
